@@ -1,8 +1,9 @@
-from sqlalchemy import func
+from sqlalchemy import func, create_engine
 from sqlalchemy import Column, Integer, String, DateTime
 from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
+
 
 class Game(Base):
     __tablename__ = 'games'
